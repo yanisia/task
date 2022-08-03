@@ -1,0 +1,64 @@
+.wrapper{
+    width: 100%;
+}
+.trans{
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid red;
+}
+.trans:hover{
+    background-color: red;
+    transition: 1.5s ease-out;
+    transition-delay: 0.05s;
+}
+.trans2{
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 10px; 
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+.trans2:hover{
+    background-color: red;
+    color: white;
+    transition: all 1.5s linear;
+}
+.trans3{
+    display: block;
+    width: 20%;
+    height: 50px;
+    margin: 10px; 
+    background-color: white;
+    border: 1px solid red;
+    
+}
+.trans3:hover{
+    transform-origin: left top;
+    transform: scaleX(4.5); 
+    transition: 3s ease-in-out;
+    transition-delay: 0.05s;
+}
+.trans4{
+    display: block;
+    align-items: flex-start;
+    width: 20%;
+    height: 50px;
+    margin: 10px; 
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+.trans4:hover{
+    transform-origin: left top;
+    transform: scaleX(4.5); 
+    transition: 3s ease-in-out;
+    transform: font-size scale(2); 
+}
+.paragraf:hover{
+    transform-origin: left top;
+    transform: scale(2);
+}
