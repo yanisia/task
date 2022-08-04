@@ -1,6 +1,7 @@
 .wrapper{
-    width: 100%;
+    width: 1280px;
 }
+/*задача 1*/
 .trans{
     display: block;
     width: 200px;
@@ -13,6 +14,7 @@
     transition: 1.5s ease-out;
     transition-delay: 0.05s;
 }
+/*задача 2*/
 .trans2{
     display: block;
     width: 200px;
@@ -27,6 +29,7 @@
     color: white;
     transition: all 1.5s linear;
 }
+/*задача 3*/
 .trans3{
     display: block;
     width: 20%;
@@ -34,14 +37,13 @@
     margin: 10px; 
     background-color: white;
     border: 1px solid red;
-    
+    transform-origin: left;
 }
 .trans3:hover{
-    transform-origin: left top;
     transform: scaleX(4.5); 
-    transition: 3s ease-in-out;
-    transition-delay: 0.05s;
+    transition: transform 3s ease-in-out;
 }
+/*задача 4*/
 .trans4{
     display: block;
     align-items: flex-start;
@@ -52,13 +54,80 @@
     border: 1px solid red;
     color: red;
 }
-.trans4:hover{
+.paragraf{
     transform-origin: left top;
-    transform: scaleX(4.5); 
-    transition: 3s ease-in-out;
-    transform: font-size scale(2); 
+    transform: scale(1);
 }
-.paragraf:hover{
+.trans4:hover .paragraf{
     transform-origin: left top;
     transform: scale(2);
+    transition: 2s ease-in-out;
+}
+.trans4:hover{
+    width: 100%;
+    transition: width 1s ease-out, font-size 1s ease-out;
+}
+/*задача 5*/
+.trans5{
+    display: block;
+    width: 20%;
+    height: 50px;
+    margin: 10px; 
+    background-color: white;
+    border: 1px solid red;
+    
+}
+.trans5:hover{
+    transform: scaleX(4);
+    transition: transform 2s ease-out;
+    transform-origin: -50px 0;
+}
+/*задача 6*/
+.trans6{
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 10px; 
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+}
+.trans6 p{
+    transform: translateX(1400px);
+    width: 100px;
+}
+.trans6:hover p{
+    transform-origin: center;
+    transform: translateX(100px);
+    transition: transform 1s linear;
+}
+/*задача 7*/
+.trans7{
+    display: block;
+    width: 20%;
+    height: 50px;
+    margin: 10px; 
+    background-color: white;
+    border: 1px solid red;
+    transform-origin: left;
+}
+.trans7:hover{
+    transform: scaleX(4); 
+    transition: transform 3s ease-in-out;
+    transition-delay: 3s;
+}
+/*задача 8*/
+input{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    display: block;
+    text-align: left;
+    transform-origin: left;
+}
+input:focus{
+    border-color: #fff;
+    box-shadow: 0 0 1px gray;
+    transform: scaleX(2);
+    transition: transform 1.5s ease-in-out;
 }
