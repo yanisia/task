@@ -8,6 +8,7 @@
     height: 100px;
     margin: 10px;
     border: 1px solid red;
+    transition: 1s ease-out;
 }
 .trans:hover{
     background-color: red;
@@ -23,6 +24,7 @@
     background-color: white;
     border: 1px solid red;
     color: red;
+    transition: all 1s linear;
 }
 .trans2:hover{
     background-color: red;
@@ -38,6 +40,8 @@
     background-color: white;
     border: 1px solid red;
     transform-origin: left;
+    transform: scaleX(1); 
+    transition: transform 3s ease-in-out;
 }
 .trans3:hover{
     transform: scaleX(4.5); 
@@ -53,15 +57,18 @@
     background-color: white;
     border: 1px solid red;
     color: red;
+    transform: scaleX(1);
+    transition: transform 2s ease-in-out;
 }
 .paragraf{
     transform-origin: left top;
     transform: scale(1);
+    transition: transform 2s ease-in-out;
 }
 .trans4:hover .paragraf{
     transform-origin: left top;
     transform: scale(2);
-    transition: 2s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 .trans4:hover{
     width: 100%;
@@ -75,7 +82,8 @@
     margin: 10px; 
     background-color: white;
     border: 1px solid red;
-    
+    transform: scaleX(1);
+    transition: transform 2s ease-out;
 }
 .trans5:hover{
     transform: scaleX(4);
@@ -95,6 +103,7 @@
 .trans6 p{
     transform: translateX(1400px);
     width: 100px;
+    transition: transform 1s linear;
 }
 .trans6:hover p{
     transform-origin: center;
@@ -110,6 +119,8 @@
     background-color: white;
     border: 1px solid red;
     transform-origin: left;
+    transform: scaleX(1); 
+    transition: transform 3s ease-in-out;
 }
 .trans7:hover{
     transform: scaleX(4); 
@@ -124,10 +135,272 @@ input{
     display: block;
     text-align: left;
     transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 1.5s ease-in-out;
+}
+input::placeholder{
+    box-shadow: 1px grey;
+    transform: scaleX(1);
+    transition: transform 1.5s ease-in-out;
+}
+input::placeholder:focus{
+    transform: scaleX(1);
+    transition: transform 1.5s ease-in-out;
+    border-width: 2px;
 }
 input:focus{
-    border-color: #fff;
-    box-shadow: 0 0 1px gray;
+    border-color: rgb(59, 58, 58), gray;
     transform: scaleX(2);
-    transition: transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out; 
+}
+/*задача 9*/
+.trans9{
+    display: block;
+    width: 650px;
+    margin: 10px; 
+    padding: 10px;
+    border: 1px solid green;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 1s linear;
+}
+.ggg{
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+    border: 1px solid red;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 1s linear;
+}
+.trans9:hover .ggg{
+    transform: scaleX(3);
+    transition: transform 1s linear; 
+    transform-origin: left;
+}
+/*задача 10*/
+.trans10{
+    display: block;
+    width: 650px;
+    margin: 10px; 
+    padding: 10px;
+    transform-origin: left;
+}
+.eee{
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    border: 1px solid red;
+    transform-origin: left;
+}
+.eee:hover + .eee{
+    transform-origin: left;
+    transform: scaleX(3);
+    transition: transform 2s linear;
+}
+/*задача 11*/
+.trans11{
+    display: block;
+    width: 650px;
+    margin: 10px; 
+    padding: 10px;
+    transform-origin: left;
+}
+.fff{
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    border: 1px solid red;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 2s ease-in-out;
+}
+.fff:hover ~ .fff{
+    transform-origin: left;
+    transform: scaleX(3);
+    transition: transform 2s ease-in-out;
+}
+/*задача 12*/
+.trans12{
+    display: block;
+    width: 650px;
+    margin: 10px; 
+    padding: 10px;
+    transform-origin: left;
+}
+.lll{
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    border: 1px solid red;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 1.5s linear;
+}
+.lll:hover + .lll + .lll{
+    transform-origin: left;
+    transform: scaleX(3);
+    transition: transform 1.5s linear;
+}
+/*задача 13*/
+.trans13{
+    display: block;
+    width: 100%;
+    margin: 10px; 
+    padding: 10px;
+    margin: 10px 0 10px 10px;
+    transform-origin: left;
+}
+.xxx{
+    display: block;
+    align-items: center;
+    width: 1280px;   
+    padding: 10px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+.yyy{
+    display: block;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: rgb(231, 90, 90);
+    padding: 20px;
+    transform: translateX(-500px);
+    transition: transform 1s ease-in-out;
+}
+.xxx:hover + .yyy{
+    transform: translateX(300px);
+    transition: transform 1s ease-in-out;
+}
+/*задача 14*/
+.trans14{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    transform-origin: left;
+    transform: scaleX(1); 
+    transition: transform 5s steps(5);
+}
+.zzz{
+    width: 200px;
+    height: 50px;
+    margin: 10px; 
+    border: 1px solid red;
+    transform-origin: left;
+    transform: scaleX(1); 
+    transition: transform 5s steps(5);
+}
+.trans14:hover .zzz{
+    transform-origin: left;
+    transform: scaleX(3); 
+    transition: transform 5s steps(5);
+}
+.zzz1{
+    width: 200px;
+    height: 50px;
+    margin: 10px; 
+    border: 1px solid red;
+    transform-origin: left;
+    transform: scaleX(1); 
+    transition: transform 5s steps(5);
+    transition-delay: 1s;
+}
+.trans14:hover .zzz1{
+    transform-origin: left;
+    transform: scaleX(3); 
+    transition: transform 5s steps(5);
+    transition-delay: 1s;
+}
+/*задача 15*/
+.trans15{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px; 
+    background-color: white;
+    border: 1px solid red;
+    transform-origin: left;
+    transform: scaleX(1); 
+    transition: transform 3s ease-in-out;
+}
+.trans15:hover{
+    transform: scaleX(4.5); 
+    transition: transform 3s cubic-bezier(.05,.55,.79,.38);
+}
+/*задача 16*/
+.trans16{
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin: 10px; 
+    border: 1px solid red;
+    transform-origin: left;
+    transition: all 3s linear;
+}
+.ccc{
+    background-color: red;
+    width: 0%;
+    height: 100%;
+    transform-origin: left;
+    transition: width 3s linear;
+}
+.trans16:hover .ccc{
+    background-color: red;
+    width: 100%;
+    transform-origin: left;
+    transition: width 3s linear;
+}
+/*задача 17*/
+.trans17{
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin: 10px; 
+    border: 1px solid red;
+    transform-origin: left;
+    transition: all 4s steps(5);
+}
+.ccc1{
+    background-color: red;
+    width: 0%;
+    height: 100%;
+    transform-origin: left;
+    transition: width 4s steps(5);
+}
+.trans17:hover .ccc1{
+    background-color: red;
+    width: 100%;
+    transform-origin: left;
+    transition: width 4s steps(5);
+}
+/*задача 18*/
+.trans18{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin: 10px; 
+    transform-origin: left;    
+}
+.sss{
+    width: 300px;
+    height: 100px; 
+    border: 1px solid red;
+    box-shadow: 0 200px black, 400px 0 black;
+    transition: all 2s linear;
+}
+.sss:hover{
+    box-shadow: 400px 200px black, 400px 200px black;
+    transition: all 2s linear;
+}
+/*задача 19*/
+.trans19{
+    width: 300px;
+    padding: 20px 0 0 20px;
+}
+.trans19 a:active{
+    color: red;
 }
